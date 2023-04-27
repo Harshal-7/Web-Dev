@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: brown;
+            text-align: center;
+            margin-top: 2px;
+            margin-bottom: 20px;
+        }
+
+        #container{
+            background-color: #dea6ff;
+            position: relative;
+            top: 100px;
+        }
+
+        p{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+
+        #p1{
+            background-color: #750000;
+            position: relative;
+            top: 65px;
+            left: 65px;
+        }
+        
+        #p2{
+            background-color: #004280;
+        }
+
+        #p3{
+            background-color: #00855d;
+            position: absolute;
+            top: 0;
+            
+        }
+
+        #p4{
+            background-color: #790073;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Positioning Elements</h1>
+
+    <div id="container">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+    </div>
+    
+</body>
+</html>

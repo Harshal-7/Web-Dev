@@ -1,0 +1,11 @@
+.body{
+    margin: 0;
+    font-family: Roboto, Arial;
+}
+
+body{
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 280px;
+    overflow-x: hidden;
+}

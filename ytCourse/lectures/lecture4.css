@@ -1,0 +1,50 @@
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .title{
+    /* font-family: Arial; */
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    line-height: 24px;
+  }
+
+  .info{
+    /* font-family: Arial; */
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top: 5px;
+  }
+
+  .name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    /* font-family: Arial; */
+    color: rgb(96, 96, 96);
+
+  }
+
+  .para{
+    /* font-family: Arial; */
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    width: 280px;
+    line-height: 22px;
+  }
+
+  .footer{
+    margin-top: 40px;
+    padding: 20px 0px 20px 0px;
+    background-color: red;
+    width: 500px;
+    text-align: center;
+    color: white;
+    font-size: 14px
+  }
+
+  .span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }

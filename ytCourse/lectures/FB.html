@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB request using display inline block</title>
+  <style>
+    *{
+      background-color: rgb(255, 171, 61);
+    }
+
+    .main-box{
+      margin-top: 200px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box-1{
+      display: inline-block;
+      margin-right: 60px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.5);
+      background: white;
+      transition: 0.4s;
+    }
+  
+    .box-2{
+      display: inline-block;
+      margin-right: 60px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.5);
+      background: white;
+      transition: 0.4s;
+
+    }
+
+    .box-3{
+      display: inline-block;
+      margin-right: 60px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.5);
+      background: white;
+      transition: 0.4s;
+
+    }
+ 
+    .img-1{
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      object-position: bottom;
+      /* border-radius: 20px; */
+    }
+    
+    .img-2{
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      object-position: bottom;
+      /* border-radius: 20px; */
+    }
+    
+    .img-3{
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      object-position: top;
+      /* border-radius: 20px; */
+    }
+
+    .name{
+      text-align: start;
+      margin: 20px 0 0 20px;
+      font-size: 35px;
+      font-weight: bold;
+      background: white;
+    }
+
+    .info{
+      text-align: start;
+      margin: 5px 0 0 20px;
+      font-size: 18px;
+      color: rgb(95,95,95);
+      background: white;
+
+    }
+
+    .buttons{
+      margin: 40px 0px 30px 0;
+      font-size: 25px;
+      padding: 10px 20px 10px 20px;
+      border: 0px;
+      border-radius: 30px;
+      background-color: rgb(0, 110, 255);
+      color: white;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .buttons:hover{
+      background-color:rgb(0, 0, 199);
+      box-shadow: 0px 1px 5px 0 rgba(0,0,0,0.5);
+    }
+
+    .box-1:hover{
+      transform:translateY(7px);
+      transition: 0.4s;
+    }
+    
+    .box-2:hover{
+      transform:translateY(7px);
+      transition: 0.4s;
+
+    }
+
+    .box-3:hover{
+      transform:translateY(7px);
+      transition: 0.4s;
+    }
+  </style>
+</head>
+<body>
+    
+  <div class="main-box">
+      
+    <div class="box-1"> 
+      
+      <img src="../thumbnails/cat-1.jpg" alt="" class="img-1">
+
+      <p class="name">
+        Oliver
+      </p>
+
+      <p class="info">
+        2 mutual friends
+      </p>
+
+      <button class="buttons">
+        Add Friend
+      </button>
+
+    </div>
+    
+    <div class="box-2">
+      
+      <img src="../thumbnails/dog-1.jpg" alt="" class="img-2">
+
+      <p class="name">
+        Mimi
+      </p>
+
+      <p class="info">
+        3 mutual friends
+      </p>
+
+      <button class="buttons">
+        Add Friend
+      </button>
+
+    </div>
+    
+    <div class="box-3">
+    
+      <img src="../thumbnails/cat-2.jpg" alt="" class="img-3">
+    
+      <p class="name">
+        Rex
+      </p>
+
+      <p class="info">
+        4 mutual friends
+      </p>
+
+      <button class="buttons">
+        Add Friend
+      </button>
+
+    </div>
+
+      
+  </div>
+
+</body>
+</html>

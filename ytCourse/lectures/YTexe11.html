@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord using flexbox and position</title>
+  <style>
+    body{
+      /* padding-left: 120px; */
+      font-family: 'Poppins';
+      font-size: 25px;
+      line-height: 65px;
+    }
+    
+    .pfp-sidebar{
+      background-color: rgb(34, 34, 34);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .info-sidebar{
+      background-color: rgb(55, 55, 55);
+      color: white;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 200px;
+      width: 350px;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    .plus-png{
+      width: 20px;
+      display: flex;
+      position: fixed;
+      left: 500px;
+      top: 40px;
+    }
+
+    .info{
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: flex;      
+    }
+
+    .cat-1,.dog-1,.cat-2{
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 100%;
+      margin-top: 15px;
+    }
+
+    .channels{
+      color: rgb(167, 167, 167);
+    }
+
+  </style>  
+</head>
+<body>
+  
+  <div class="pfp-sidebar">
+    
+    <img class="cat-1" src="../thumbnails/cat-1.jpg" alt="">
+    <img class="dog-1" src="../thumbnails/dog-1.jpg" alt="">
+    <img class="cat-2" src="../thumbnails/cat-2.jpg" alt="">
+
+  </div>
+
+  <div class="info-sidebar">
+    <div class="info">INFO</div>
+    
+    <div class="plus-img">
+      <img class="plus-png" src="../thumbnails/plus.png" alt="">
+    </div>
+
+    <div class="channels">
+      <div># new-videos</div>
+    
+      <div># updates</div>
+      
+      <div># faq</div>
+    </div>
+  
+  </div>
+  
+</body>
+</html>

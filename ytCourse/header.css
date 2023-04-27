@@ -1,0 +1,166 @@
+.header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    z-index: 100;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+
+    border-bottom: 1px solid rgb(207, 205, 205);
+    padding-bottom: 10px;
+}
+
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    margin-left: 150px;
+    margin-right: 10px;
+    max-width: 780px;
+    align-items: center;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: end;
+    flex-shrink: 0;
+}
+
+
+.hamburger-menu{
+    height: 30px;
+    margin-right: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.yt-pic{
+    height: 62px;
+    cursor: pointer;
+}
+
+.search-bar{
+    flex: 1;
+    height: 28px;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 30px;
+    padding: 10px 10px 10px 20px;
+    box-shadow: rgb(238, 238, 238) 0px 1px 2px 0px inset;
+    width: 0;
+}
+
+.search-button{
+    height: 25px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+}
+
+.s-b{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 10px 0px 8px;
+    /* margin-left: 0.01px; */
+}
+
+.s-b:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+.microphone{
+    height: 23px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.m-b{
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 100%;
+    padding: 12px 15px 12px 15px;
+    margin-left: 20px;
+    margin-top: 2   px;
+}
+
+.m-b:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+.create{
+    height: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.create:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notification{
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 22px;
+    margin-top: 3px;
+}
+
+.notification:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mypfp{
+    height: 38px;
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 22px;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+.header-notification{
+    position: fixed;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 16px;
+    width: 8px;
+    padding: 1px 5px 1px 5px;
+    right: 100px;
+    top: 20px;
+}
+
+
