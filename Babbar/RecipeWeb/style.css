@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&family=Poppins&family=Raleway&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    padding-top: 80px;
+    overflow-x: hidden;
+    background-color:rgb(251, 255, 255);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* overflow-x: none; */
+}
+
+.navContainer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top: 0;
+    z-index: 999;
+    background-color:rgb(251, 255, 255);
+}
+nav{
+    width: 100%;
+}
+#navList{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    font-weight: 500;
+    font-size: 13px;
+    transition: background-color ease-in;
+}
+
+li div a{
+    text-decoration: none;
+    color: black;
+    transition: background-color ease-in;
+}
+
+.rightNavInfo{
+    display: flex;
+    gap: 100px;
+}
+
+#navList li p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navList.scrolled{
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
+
+#navList.scrolled li div a{
+    color: white;
+}
+
+
+.contentBox{
+    width: 65%;
+    margin: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.leftBox{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rightBox{
+    padding: 50px;
+}
+
+.rightBox img{
+    width: 500px;
+    border-radius: 40px;
+    margin-top: 130px;
+    transition: all 0.2s linear;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.rightBox img:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+
+.leftBox h2{
+    font-size: 52px;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.leftBox h3{
+    font-size: 30px;
+}
+
+.leftBox div ul , .leftBox div ol{
+    margin: 8px 30px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations - 01</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+            background-color: beige;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(255, 255, 90);
+            padding: 100px;
+        }
+        .box{
+            width: 350px;
+            height: 100px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            border-radius: 15px;
+            position: relative;
+            animation-name: rightAni;
+            animation-duration: 3s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1)
+        }
+        @keyframes rightAni {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1250px
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+
+
+</body>
+</html>

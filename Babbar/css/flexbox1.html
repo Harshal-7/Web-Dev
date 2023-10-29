@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-01</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 4px solid black;
+            font-weight: bold;
+            font-size: larger;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+            
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            height: 1000px;
+
+            /* justify-content: center; */
+            /* justify-content:end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: stretch; */
+            
+            align-content: start;
+            /* align-content: center; */
+            /* align-content: end; */
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+     <div class="container">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+     </div>
+
+     
+
+</body>
+</html>
