@@ -15,7 +15,7 @@ body{
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     /* overflow-x: none; */
 }
@@ -73,7 +73,7 @@ li div a{
 
 
 .contentBox{
-    width: 65%;
+    width: 50%;
     margin: auto;
     border-top: 1px solid rgba(0, 0, 0, 0.04);
     display: flex;
@@ -98,7 +98,7 @@ li div a{
 }
 
 .rightBox img{
-    width: 500px;
+    width: 350px;
     border-radius: 40px;
     margin-top: 130px;
     transition: all 0.2s linear;
