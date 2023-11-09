@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - 03</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #212121;
+            color: white;
+            font-size: 1.5em;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <ul id="ul">
+        <li>Javascript</li>
+    </ul>
+
+</body>
+<script>
+
+    const ul = document.getElementById('ul')
+
+    // const li = document.createElement('li')
+    // li.appendChild(document.createTextNode("Python"));
+    // ul.appendChild(li);
+
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('#ul').appendChild(li)
+    }
+
+    addLanguage('Python')
+    addLanguage('C')
+    addLanguage('Java')
+
+    //Edit 
+    function addNewElementAtIndex(index,lang){
+        const language = document.querySelector(`li:nth-child(${index})`)
+        const newEle = document.createElement('li')
+        newEle.appendChild(document.createTextNode(lang));
+        language.replaceWith(newEle);
+    }
+
+    addNewElementAtIndex(2,'Ruby')
+    addNewElementAtIndex(4,'GoLaang')
+    
+</script>
+</html>
