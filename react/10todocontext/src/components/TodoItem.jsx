@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTodo } from "../context/TodoContext";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 function TodoItem({ todo }) {
 
@@ -18,7 +19,8 @@ function TodoItem({ todo }) {
 
     return (
         <div
-            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/20 duration-300  text-white ${todo.completed ? "bg-[#060d11] text-gray-400 shadow-none" : "bg-[#252525]"
+            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 duration-300  text-white
+                        ${todo.completed ? "bg-[#060d11] text-gray-400" : "bg-[#252525]"
                 }`}
         >
             <input
@@ -37,7 +39,7 @@ function TodoItem({ todo }) {
             />
             {/* Edit, Save Button */}
             <button
-                className="inline-flex w-8 h-8 rounded-lg text-sm justify-center items-center bg-[#313131]  hover:bg-[#272727] shrink-0 disabled:opacity-50"
+                className="inline-flex w-8 h-8 rounded-lg text-sm justify-center items-center bg-[#272727]  hover:bg-[#313131] shrink-0 disabled:opacity-50"
                 onClick={() => {
                     if (todo.completed) return;
 
@@ -51,7 +53,7 @@ function TodoItem({ todo }) {
             </button>
             {/* Delete Todo Button */}
             <button
-                className="inline-flex w-8 h-8 rounded-lg text-sm justify-center items-center bg-[#313131]  hover:bg-[#272727] shrink-0"
+                className="inline-flex w-8 h-8 rounded-lg text-sm justify-center items-center bg-[#272727]  hover:bg-[#313131] shrink-0"
                 onClick={() => deleteTodo(todo.id)}
             >
                 ❌
