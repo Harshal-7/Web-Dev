@@ -3,6 +3,7 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 import instagramLogo from '../assets/instagram.png'
 import linkdinLogo from '../assets/linkedin.png'
 import githubLogo from '../assets/github.png'
+import './styles.css'
 
 function About() {
     return (
@@ -44,17 +45,17 @@ function About() {
 
                             <Link to="https://www.instagram.com/jeonhrs_/" className="flex items-center">
                                 <img src={instagramLogo} className="h-6 mr-3 sm:h-9" alt="instagram" />
-                                <span className="self-center text-xl font-semibold whitespace-nowrap">Instagram</span>
+                                <span className="self-center text-xl font-semibold whitespace-nowrap mediaClass">Instagram</span>
                             </Link>
 
                             <Link to="https://www.linkedin.com/in/harshal-shinde-77a862210" className="flex items-center">
                                 <img src={linkdinLogo} className="h-6 mr-3 sm:h-9" alt="linkdin" />
-                                <span className="self-center text-xl font-semibold whitespace-nowrap ">Linkdin</span>
+                                <span className="self-center text-xl font-semibold whitespace-nowrap mediaClass">Linkdin</span>
                             </Link>
 
                             <Link to="https://github.com/Harshal-7" className="flex items-center">
                                 <img src={githubLogo} className="h-6 mr-3 sm:h-9" alt="github" />
-                                <span className="self-center text-xl font-semibold whitespace-nowrap ">Github</span>
+                                <span className="self-center text-xl font-semibold whitespace-nowrap mediaClass">Github</span>
                             </Link>
 
 

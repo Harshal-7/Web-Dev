@@ -1,0 +1,9 @@
+@media (max-width: 450px) {
+    .mediaClass{
+        display: none;
+    }
+    .navMedia{
+        font-size: 0.85rem;
+        gap: 1px;
+    }
+  }

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link, NavLink, Outlet } from "react-router-dom";
+import './styles.css'
 
 function Navbar() {
     return (
-        <div className='sticky z-50 top-0 w-full bg-[#060d11] text-white font-sans'>
+        <div className='sticky z-50 top-0 w-full bg-[#060d11] text-white font-sans navMedia'>
             <div className='w-full max-w-2xl mx-auto flex flex-row items-center justify-between px-4 py-2'>
-                < div className='text-xl font-extrabold' >
+                < div className='text-xl font-extrabold navMedia' >
                     TASKS
                 </ div>
 
