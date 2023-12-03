@@ -1,41 +1,42 @@
 import React from 'react'
 import { Link, NavLink, Outlet } from "react-router-dom";
+import { useState } from 'react';
 
 function ContactUs() {
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-      });
+    // const [formData, setFormData] = useState({
+    //     name: '',
+    //     email: '',
+    //     message: '',
+    //   });
     
-      const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-      };
+    //   const handleChange = (e) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value });
+    //   };
     
-      const handleSubmit = async (e) => {
-        e.preventDefault();
+    //   const handleSubmit = async (e) => {
+    //     e.preventDefault();
     
-        try {
-          const response = await fetch('http://localhost:3001/contact', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-          });
+    //     try {
+    //       const response = await fetch('http://localhost:3001/contact', {
+    //         method: 'POST',
+    //         headers: {
+    //           'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify(formData),
+    //       });
     
-          if (response.ok) {
-            console.log('Email sent successfully!');
-            // You can add logic here to show a success message or redirect the user.
-          } else {
-            console.error('Failed to send email.');
-            // Handle error and provide feedback to the user.
-          }
-        } catch (error) {
-          console.error('Error sending email:', error);
-        }
-      };
+    //       if (response.ok) {
+    //         console.log('Email sent successfully!');
+    //         // You can add logic here to show a success message or redirect the user.
+    //       } else {
+    //         console.error('Failed to send email.');
+    //         // Handle error and provide feedback to the user.
+    //       }
+    //     } catch (error) {
+    //       console.error('Error sending email:', error);
+    //     }
+    //   };
 
     return (
         <div className="relative flex items-top justify-center min-h-[700px] bgWhite sm:items-center sm:pt-0">
@@ -123,7 +124,7 @@ function ContactUs() {
                             </div>
                         </div>
 
-                        <form onSubmit={handleSubmit} className="p-6 flex flex-col justify-center">
+                        <form  className="p-6 flex flex-col justify-center">
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="hidden">
                                     Full Name
@@ -134,7 +135,6 @@ function ContactUs() {
                                     id="name"
                                     placeholder="Full Name"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bgWhite border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                    onChange={handleChange}
                                     required
                                 />
                             </div>
@@ -149,7 +149,6 @@ function ContactUs() {
                                     id="email"
                                     placeholder="Email"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bgWhite border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                    onChange={handleChange}
                                     required
                                 />
                             </div>
@@ -158,7 +157,7 @@ function ContactUs() {
                                 <label htmlFor="message" className="hidden">
                                     Your Message
                                 </label>
-                                <textarea onChange={handleChange} required id="message" rows="4" className="block mt-2 rounded-lg p-2.5 w-full text-sm bgWhite border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none" placeholder="Your message..."></textarea>
+                                <textarea required id="message" rows="4" className="block mt-2 rounded-lg p-2.5 w-full text-sm bgWhite border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none" placeholder="Your message..."></textarea>
                             </div>
 
                             <button
