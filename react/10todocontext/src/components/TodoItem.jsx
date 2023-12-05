@@ -19,7 +19,7 @@ function TodoItem({ todo }) {
 
     return (
         <div
-            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 duration-300  text-white
+            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 duration-300 todoItem text-white
                         ${todo.completed ? "bg-[#060d11] text-gray-400" : "bg-[#252525]"
                 }`}
         >
@@ -31,8 +31,8 @@ function TodoItem({ todo }) {
             />
             <input
                 type="text"
-                className={`border outline-none w-full bg-transparent rounded-lg ${isTodoEditable ? "border-black/10 px-2" : "border-transparent"
-                    } ${todo.completed ? "line-through" : ""}`}
+                className={`border outline-none w-full bg-transparent rounded-lg ${isTodoEditable ? "border-white/10 px-2" : "border-transparent"} 
+                            ${todo.completed ? "line-through" : ""}`}
                 value={todoMsg}
                 onChange={(e) => setTodoMsg(e.target.value)}
                 readOnly={!isTodoEditable}
@@ -41,6 +41,7 @@ function TodoItem({ todo }) {
             <button
                 className="inline-flex w-8 h-8 rounded-lg text-sm justify-center items-center bg-[#272727]  hover:bg-[#313131] shrink-0 disabled:opacity-50"
                 onClick={() => {
+                    
                     if (todo.completed) return;
 
                     if (isTodoEditable) {

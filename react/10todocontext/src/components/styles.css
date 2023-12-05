@@ -1,9 +1,15 @@
-@media (max-width: 450px) {
+@media (max-width: 440px) {
     .mediaClass{
         display: none;
     }
     .navMedia{
+        font-size: 0.73rem;
+        /* gap: 1px; */
+    }
+    .todoItem{
         font-size: 0.85rem;
-        gap: 1px;
+    }
+    .taskLogo{
+        width: 1rem;
     }
   }
