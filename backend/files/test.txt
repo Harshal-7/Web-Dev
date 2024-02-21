@@ -1,0 +1,33 @@
+writing in file using fs.writeFileSync
+Appending text using apendFileSync
+1,707,312,736,467 user logged
+Appending text using apendFileSync
+1,707,312,740,668 user logged
+Appending text using apendFileSync
+1,707,312,741,939 user logged
+Appending text using apendFileSync
+1,707,312,742,391 user logged
+Appending text using apendFileSync
+1,707,312,751,109 user logged
+Appending text using apendFileSync
+1,707,312,753,554 user logged
+Appending text using apendFileSync
+1,707,312,754,361 user logged
+Appending text using apendFileSync
+1,707,312,754,968 user logged
+Appending text using apendFileSync
+1,707,312,755,488 user logged
+Appending text using apendFileSync
+1,707,312,755,984 user logged
+Appending text using apendFileSync
+1,707,312,756,693 user logged
+Appending text using apendFileSync
+1,707,312,757,373 user logged
+Appending text using apendFileSync
+1,707,312,809,522 user logged
+Appending text using apendFileSync
+1,707,312,861,312 user logged
+Appending text using apendFileSync
+1,707,312,878,302 user logged
+Appending text using apendFileSync
+1,707,312,935,588 user logged

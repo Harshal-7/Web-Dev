@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(19, 17, 17);
+  /* overflow-x: hidden; */
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  /* background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0); */
+}
