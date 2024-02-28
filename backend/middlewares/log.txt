@@ -1,0 +1,15 @@
+GET: /api/users at time: 1708970467652
+DELETE: /api/users/999 at time: 1708970483456
+PATCH: /api/users/100 at time: 1708970504047
+GET: /api/users at time: 1708970517195
+POST: /api/users at time: 1708970519454
+GET: /api/users/1001 at time: 1708970529513
+GET: / at time: 1709110167805
+GET: /favicon.ico at time: 1709110168446
+GET: /api/users at time: 1709110172547
+GET: /api/users at time: 1709110188819
+GET: /api/users at time: 1709121294122
+GET: /api/users at time: 1709121355330
+GET: /api/users at time: 1709121381420
+GET: /api/users at time: 1709121391462
+GET: /api/users at time: 1709121671222
